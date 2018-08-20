@@ -7,8 +7,9 @@ alias z='ls -aF'
 alias bc='bc -l'
 alias cls='clear'
 alias rd='rmdir'
-alias psu='ps -f -u $USER -U $USER'
-alias psuj='ps -f -u $USER -U $USER | grep java'
+alias psu='ps -f -u $USER'
+alias psu2'ps -f -u $USER -U $USER'
+alias psuj='ps -f -u $USER | grep java'
 
 # git aliases
 alias gbr='git branch'
