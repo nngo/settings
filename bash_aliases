@@ -6,15 +6,15 @@ alias z='ls -aF'
 # misc aliases
 alias bc='bc -l'
 alias cls='clear'
-alias ealias='vim ~/.bash_aliases'
-alias salias='source ~/.bash_aliases'
+alias ealias='vim ~/settings/bash_aliases'
+alias salias='source ~/settings/bash_aliases'
 alias md='mkdir'
 alias rd='rmdir'
 alias psu='ps -f -u $USER'
 alias psu2='ps -f -u $USER -U $USER'
 alias psuj='ps -f -u $USER | grep java'
 
-# git aliases
+# Git aliases
 alias gbr='git branch'
 alias gci='git commit'
 alias gco='git checkout'
