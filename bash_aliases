@@ -33,3 +33,11 @@ alias gsv='git stash show'
 alias gsv1='git stash show stash@{1}'
 alias gsv2='git stash show stash@{2}'
 
+# Gradle aliases
+alias gr='gradle'
+alias grbld='gradle build'
+alias grcbld='gradle clean build'
+alias gw='./gradlew'
+alias gwbld='gw build'
+alias gwcbld='gw clean build'
+
