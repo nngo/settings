@@ -1,5 +1,9 @@
+api
+gradlew
 Maven
 plugin
 plugins
 proxy
+searchable
+Solr
 Tor
