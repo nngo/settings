@@ -4,9 +4,7 @@
 # Usage:
 # 1. Append following to your ~/.cshrc to source this file
 #    # Source custom ~/settings/cshrc (if exists).
-#    if ( -f ~/settings/cshrc ) then
-#      source ~/settings/cshrc
-#    endif
+#    if ( -f ~/settings/cshrc ) source ~/settings/cshrc
 #
 # 2. Link ~/.cshrc to this file under ~/settings/cshrc
 #    $ ln -s ~/settings/cshrc ~/.cshrc
@@ -62,7 +60,5 @@ if ( -x /usr/bin/dircolors ) then
 endif
 
 # Source alias definitions (if exists).
-if ( -f ~/settings/csh-aliases ) then
-    source ~/settings/csh-aliases
-endif
+if ( -f ~/settings/csh-aliases ) source ~/settings/csh-aliases
 
