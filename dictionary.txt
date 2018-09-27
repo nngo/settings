@@ -1,8 +1,12 @@
 api
+deserialization
+endpoint
+gradle
 gradlew
 Maven
 plugin
 plugins
+proxies
 proxy
 searchable
 Solr
