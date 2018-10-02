@@ -74,3 +74,5 @@ alias gwdm='gw dependencyManagement'
 alias gwp2local='gw publishToMavenLocal'
 alias gwupgrade-example='gw wrapper --gradle-version 4.10 --gradle-distribution-sha256-sum 248cfd92104ce12c5431ddb8309cf713fe58de8e330c63176543320022f59f18; gw wrapper -v'
 
+alias http-post-json-curl='curl --request POST --header "Content-Type: application/json" --data'
+alias http-post-data.json-file='curl -X POST -H "Content-Type: application/json" --data @data.json -i'
