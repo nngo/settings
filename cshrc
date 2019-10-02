@@ -60,5 +60,5 @@ if ( -x /usr/bin/dircolors ) then
 endif
 
 # Source alias definitions (if exists).
-if ( -f ~/settings/csh-aliases ) source ~/settings/csh-aliases
+if ( -f ~/settings/caliases.csh ) source ~/settings/caliases.csh
 
