@@ -39,7 +39,10 @@ set laststatus=2
 
 " Display different types of white spaces.
 set list
-set listchars=tab:›\ ,trail:•,extends:#,nbsp:.
+" enter middle-dot '·' via ctrl+k then .M
+" enter the right-angle-quote '»' via ctrl+k then >>
+" enter the pilcrow mark '¶' via ctrl+k then PI
+set listchars=tab:»·,trail:•,extends:#,nbsp:.
 	" two tab before comment with trailing tabs (2) and spaces(2)		  
 
 """" Tab settings """"
