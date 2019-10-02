@@ -49,7 +49,7 @@ fi
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # Source alias definitions (if exists).
-if [ -f ~/settings/bash_aliases ]; then
-    source ~/settings/bash_aliases
+if [ -f ~/settings/aliases.bash ]; then
+  source ~/settings/aliases.bash
 fi
 
