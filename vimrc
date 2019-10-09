@@ -42,6 +42,10 @@ set list
 " enter middle-dot '·' via ctrl+k then .M
 " enter the right-angle-quote '»' via ctrl+k then >>
 " enter the pilcrow mark '¶' via ctrl+k then PI
+" enter BULLET OPERATOR '∙' via ctrl+k then Sb
+" enter BLACK CIRLE '●' via ctrl+k then 0M
+" enter DOT ABOVE '˙' via ctrl+k then '.
+" :help digraphs
 set listchars=tab:»·,trail:•,extends:#,nbsp:.
 	" two tab before comment with trailing tabs (2) and spaces(2)		  
 
