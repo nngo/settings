@@ -80,7 +80,49 @@ openssl enc -d -aes256 -md sha256 -pass file:file.password -in encrypted.sha256.
 
 ## Nginx
 
-* Test/Check Nginx configuration file:
+* Official website: https://nginx.org
+* Official source repo: http://hg.nginx.org/nginx/
+* GitHub repo mirror: https://github.com/nginx/nginx
+* Running in Docker container: https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-docker/
+
+
+* Start nginx web server
+
+```shell
+service nginx start
+
+# -or-
+systemctl start nginx
+```
+
+* Stop nginx web server
+
+```shell
+service nginx stop
+
+# -or-
+systemctl stop nginx
+
+# -or- (for graceful shutdown)
+nginx -s quit
+
+# -or- (for force/fast shutdown)
+nginx -s stop
+```
+
+* Restart nginx web server
+`/usr/local/etc/rc.d/nginx restart`
+```shell
+service nginx restart
+
+# -or-
+systemctl restart nginx
+
+# -or-
+nginx restart
+```
+
+* Test/Check Nginx configuration file (using `-t`):
 
 ```shell
 nginx -t -c /path/to/nginx.conf
