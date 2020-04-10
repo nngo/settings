@@ -19,6 +19,9 @@ alias psu2='ps -f -u $USER -U $USER'
 alias psuj='ps -f -u $USER | grep java'
 alias ssh-forward-port-example='ssh -L local_port:remote_host:remote_port'
 alias vimcr='vim -b'
+alias disable-bash-history='set +o history'
+alias disable-bash-history2='unset HISTFILE'
+alias enable-bash-history='set -o history'
 
 # Git aliases
 alias gbd='git branch --delete'
