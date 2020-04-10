@@ -23,6 +23,8 @@ alias disable-bash-history='set +o history'
 alias disable-bash-history2='unset HISTFILE'
 alias enable-bash-history='set -o history'
 
+alias help-export-ssh-agent='echo "export SSH_AUTH_SOCK=$SSH_AUTH_SOCK; export SSH_AGENT_PID=$SSH_AGENT_PID;"'
+
 # Git aliases
 alias gbd='git branch --delete'
 alias gbla='git branch --all'
