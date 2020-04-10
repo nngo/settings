@@ -1,6 +1,7 @@
 # single char aliases
 alias a='alias'
 alias d='ls -lF'
+alias g='grep'
 alias h='history'
 alias z='ls -aF'
 
@@ -9,6 +10,7 @@ alias bc='bc -l'
 alias cls='clear'
 alias ealias='vi ~/settings/aliases.bash'
 alias salias='source ~/settings/aliases.bash'
+alias less-ansi-color='less --RAW-CONTROL-CHARS'
 alias ll='ls -l'
 alias lss='ls -lSr'
 alias lst='ls -ltr'
