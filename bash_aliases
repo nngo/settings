@@ -119,6 +119,17 @@ alias now2sec='date +%s'
 alias date2sec='date --date=2019-01-08 +%s'
 alias sec2date='date --date=@1546923600'
 
+# PDF
+# 128 bit AES - requires PDF v1.6
+alias protect-pdf-128-aes='qpdf --encrypt user-password owner-password 128 --use-aes=y -- input.pdf protected.pdf'
+# 256 bit AES - requires PDF v1.7 with extension level 8, e.g. Acrobat X)
+alias protect-pdf-256-aes='qpdf --encrypt $pdf_user_password $pdf_owner_password 256 --'
+alias protect-pdf2='qpdf --encrypt $pdf_password $pdf_password 256 --'
+alias protect-pdf1='qpdf --encrypt $pdf_password $pdf_password 128 --use-aes=y --'
+# 256 bit AES - requires PDF v1.7 with extension level 8, e.g. Acrobat X)
+alias unprotected-pdf='qpdf --password=owner-passwd --decrypt protected.pdf output.pdf'
+alias pdf-page-selection='qpdf --empty --pages'
+alias pdf-page-selection-example='qpdf --empty --pages in1.pdf 2-5 [in2.pdf page-range ...] -- out.pdf'
 
 alias http-post-json-curl='curl --request POST --header "Content-Type: application/json" --data'
 alias http-post-data.json-file='curl -X POST -H "Content-Type: application/json" --data @data.json -i'
