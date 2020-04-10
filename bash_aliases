@@ -114,5 +114,11 @@ alias gwupgrade-to-5_4_1='gw wrapper --gradle-version 5.4.1 --gradle-distributio
 alias gwupgrade-to-5_5_1='gw wrapper --gradle-version 5.5.1 --gradle-distribution-sha256-sum 222a03fcf2fcaf3691767ce9549f78ebd4a77e73f9e23a396899fb70b420cd00 && gw wrapper -v'
 alias gwupgrade-to-5_6_4='gw wrapper --gradle-version 5.6.4 --gradle-distribution-sha256-sum 1f3067073041bc44554d0efe5d402a33bc3d3c93cc39ab684f308586d732a80d && gw wrapper -v'
 
+# dates
+alias now2sec='date +%s'
+alias date2sec='date --date=2019-01-08 +%s'
+alias sec2date='date --date=@1546923600'
+
+
 alias http-post-json-curl='curl --request POST --header "Content-Type: application/json" --data'
 alias http-post-data.json-file='curl -X POST -H "Content-Type: application/json" --data @data.json -i'
