@@ -131,5 +131,9 @@ alias unprotected-pdf='qpdf --password=owner-passwd --decrypt protected.pdf outp
 alias pdf-page-selection='qpdf --empty --pages'
 alias pdf-page-selection-example='qpdf --empty --pages in1.pdf 2-5 [in2.pdf page-range ...] -- out.pdf'
 
+# JSON
+alias pretty-print-json-python='python -m json.tool'
+alias pretty-print-json-jq='jq . '
+
 alias http-post-json-curl='curl --request POST --header "Content-Type: application/json" --data'
 alias http-post-data.json-file='curl -X POST -H "Content-Type: application/json" --data @data.json -i'
