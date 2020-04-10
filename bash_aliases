@@ -163,5 +163,10 @@ alias aes-decrypt='openssl enc -d -aes256 -md sha256 -pass file:deploy.password 
 
 # get length of a public ssh key
 alias ssh-keylength='ssh-keygen -lf'
-alias http-post-json-curl='curl --request POST --header "Content-Type: application/json" --data'
-alias http-post-data.json-file='curl -X POST -H "Content-Type: application/json" --data @data.json -i'
+
+# cURL HTTP POST, etc.
+alias http-post-json-curl='curl --request POST --header "Content-Type: application/json" --include --data'
+alias http-post-data.json-file='curl -X POST -H "Content-Type: application/json" -i --data @data.json'
+alias http-put-json-curl='curl -X PUT -H "Content-Type: application/json" -i -d'
+alias http-basic-auth-curl='curl --user user:password'
+alias sb-post-shutdown='curl -X POST http://localhost:8080/actuator/shutdown'
