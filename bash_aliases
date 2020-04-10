@@ -22,6 +22,7 @@ alias vimcr='vim -b'
 alias disable-bash-history='set +o history'
 alias disable-bash-history2='unset HISTFILE'
 alias enable-bash-history='set -o history'
+alias killw='taskkill //f //pid'
 
 alias help-export-ssh-agent='echo "export SSH_AUTH_SOCK=$SSH_AUTH_SOCK; export SSH_AGENT_PID=$SSH_AGENT_PID;"'
 
