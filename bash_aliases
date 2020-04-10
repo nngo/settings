@@ -160,5 +160,8 @@ alias awk-3rd-column="awk 'NR>2 {print \$3}'"
 # Encrypt / Decrypt files
 alias aes-encrypt='openssl enc -e -aes256 -md sha256 -pass file:deploy.password -in'
 alias aes-decrypt='openssl enc -d -aes256 -md sha256 -pass file:deploy.password -in'
+
+# get length of a public ssh key
+alias ssh-keylength='ssh-keygen -lf'
 alias http-post-json-curl='curl --request POST --header "Content-Type: application/json" --data'
 alias http-post-data.json-file='curl -X POST -H "Content-Type: application/json" --data @data.json -i'
