@@ -121,10 +121,14 @@ alias gwd..='gw.. dependencies'
 alias gwdm='gw dependencyManagement'
 alias gwdoc='gw javadoc'
 alias gwp2local='gw publishToMavenLocal'
-alias gwupgrade-to-5_3_1='gw wrapper --gradle-version 5.3.1 --gradle-distribution-sha256-sum 1c59a17a054e9c82f0dd881871c9646e943ec4c71dd52ebc6137d17f82337436 && gw wrapper -v'
-alias gwupgrade-to-5_4_1='gw wrapper --gradle-version 5.4.1 --gradle-distribution-sha256-sum 7bdbad1e4f54f13c8a78abc00c26d44dd8709d4aedb704d913fb1bb78ac025dc && gw wrapper -v'
-alias gwupgrade-to-5_5_1='gw wrapper --gradle-version 5.5.1 --gradle-distribution-sha256-sum 222a03fcf2fcaf3691767ce9549f78ebd4a77e73f9e23a396899fb70b420cd00 && gw wrapper -v'
 alias gwupgrade-to-5_6_4='gw wrapper --gradle-version 5.6.4 --gradle-distribution-sha256-sum 1f3067073041bc44554d0efe5d402a33bc3d3c93cc39ab684f308586d732a80d && gw wrapper -v'
+alias gwupgrade-to-6_4_1='gw wrapper --gradle-version 6.4.1 --gradle-distribution-sha256-sum e58cdff0cee6d9b422dcd08ebeb3177bc44eaa09bd9a2e838ff74c408fe1cbcd && gw wrapper -v && gw wrapper --gradle-version 6.4.1'
+alias gwwarnings='gw help --warning-mode=all'
+
+# Maven
+alias mbldNoTests='mvn -DskipTests package'
+alias mbld='mvn package'
+alias mcbld='mvn clean package'
 
 # dates
 alias now2sec='date +%s'
