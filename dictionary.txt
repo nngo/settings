@@ -32,6 +32,7 @@ jasypt
 jetty
 jexec
 kanban
+keycloak
 keystore
 korean
 libs
@@ -55,7 +56,7 @@ sbin
 scp
 searchable
 solr
-Solr
+sphinx
 sql
 src
 ssh
