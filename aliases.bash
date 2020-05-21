@@ -1,6 +1,7 @@
 # single char aliases
 alias a='alias'
 alias d='ls -lF'
+alias dh='ls -lFh'
 alias g='grep'
 alias h='history'
 alias z='ls -aF'
