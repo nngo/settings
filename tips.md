@@ -136,3 +136,28 @@ nginx -s reload
 # or send SIGHUP signal to nginx process
 kill -HUP <nginx-pid>
 ```
+
+
+## SSH
+
+### Generate secure ssh key
+
+* Create secure [ED25519](https://en.wikipedia.org/wiki/EdDSA#Ed25519) SSH key with with 99 KDF rounds:
+
+```shell
+ssh-keygen -t ed25519 -a 99
+```
+
+* Get length of private ssh key:
+
+```shell
+ssh-keygen -lf ~/.ssh/id_rsa
+
+ssh-keygen -lf ~/.ssh/id_ed25519
+```
+
+* Forward port via ssh:
+
+```shell
+ssh -L local_port:remote_host:remote_port server
+```
