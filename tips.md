@@ -81,10 +81,13 @@ openssl enc -d -aes256 -md sha256 -pass file:file.password -in encrypted.sha256.
 ## Nginx
 
 * Official website: https://nginx.org
+* nginx documentation: https://nginx.org/en/docs/
+  * HTTPS configuration: https://nginx.org/en/docs/http/configuring_https_servers.html
 * Official source repo: http://hg.nginx.org/nginx/
 * GitHub repo mirror: https://github.com/nginx/nginx
 * Running in Docker container: https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-docker/
-
+* Nginx Tuning for best performance: https://github.com/denji/nginx-tuning
+* Nginx secure configuration: https://8gwifi.org/docs/nginx-secure.jsp
 
 * Start nginx web server
 
