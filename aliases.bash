@@ -1,3 +1,9 @@
+# echo command before running it
+function runcmd() {
+  echo $@
+  eval $@
+}
+
 # single char aliases
 alias a='alias'
 alias d='ls -lF'
@@ -160,13 +166,17 @@ alias dcdown='docker-compose down'
 alias dcls='docker container ls'
 alias dcrm='docker container rm'
 alias dimgs='docker images'
+alias dins='runcmd docker inspect'
+alias dkill='docker kill'
 alias drmi='docker image rm'
 alias dps='docker ps'
+alias dpull='docker pull'
 alias dStop='docker stop'
 alias drunit='winpty docker run -it --rm'
 alias drunitkeep='winpty docker run -it'
 alias dexecit='winpty docker exec -it'
 alias dstartia='winpty docker start -ia'
+alias dtag='docker tag'
 alias ddangleimgs='docker images -f "dangling=true"'
 alias diprune='docker image prune'
 alias dsysPrune='docker system prune'
