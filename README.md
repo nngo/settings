@@ -37,3 +37,10 @@ fi
   path = ~/settings/gitconfig
 ```
 
+## VIM Settings Usage
+* Create symbolic link from `~/.vimrc` to file under `~/settings/vimrc`, e.g.
+
+```shell
+ln -s ~/settings/vimrc ~/.vimrc
+````
+
