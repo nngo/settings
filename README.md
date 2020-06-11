@@ -1,6 +1,8 @@
 # Settings and Configurations
 my Linux shell dotfiles (.bashrc, .cshrc, .aliases.bash, .aliases.csh, etc.)
 
+* NOTE: below assumes you have cloned this repo into your home directory under `~/settings`.
+
 ## Bash Settings Usage:
 * Append following to your `~/.bashrc` to source this file, e.g.
 
