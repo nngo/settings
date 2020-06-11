@@ -29,3 +29,11 @@ if [ -f ~/settings/aliases.bash ]; then
 fi
 ```
 
+## Git Settings Usage
+* Add following to your ~/.gitconfig`:
+
+```
+[include]
+  path = ~/settings/gitconfig
+```
+
