@@ -30,7 +30,7 @@ fi
 ```
 
 ## Git Settings Usage
-* Add following to your ~/.gitconfig`:
+* Add following to your `~/.gitconfig`:
 
 ```
 [include]
@@ -42,5 +42,5 @@ fi
 
 ```shell
 ln -s ~/settings/vimrc ~/.vimrc
-````
+```
 
