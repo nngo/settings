@@ -77,6 +77,58 @@ openssl enc -e -aes256 -md sha256 -pass file:file.password -in input.file -out e
 openssl enc -d -aes256 -md sha256 -pass file:file.password -in encrypted.sha256.aes256 -out output.file
 ```
 
+## Nexus Repository
+
+Sonatype Nexus Repository
+https://www.sonatype.com/nexus-repository-oss
+
+### Running Nexus in Docker
+=================================================
+
+#### Setup Persistent data volume
+https://hub.docker.com/r/sonatype/nexus3#user-content-persistent-data
+
+```shell
+docker volume create --name nexus-data
+```
+
+#### Start Nexus
+Default user is admin and the uniquely generated password can be found in the `/nexus-data/admin.password` file inside the volume.
+See Persistent Data for information about the volume.
+
+```shell
+docker run -d -p 8081:8081 --name nexus -v nexus-data:/nexus-data sonatype/nexus3
+```
+
+NOTE: It can take some time (2-3 minutes) for the service to launch in a new container.
+* You can tail the log to determine once Nexus is ready:
+
+```shell
+docker logs -f nexus
+```
+
+* To test nexus instance:
+
+```shell
+curl http://localhost:8081/
+
+curl http://localhost:8081/service/local/status
+```
+
+* Get initally generated Admin password
+* FYI: this admin.password file is removed after you login and change the admin password.
+
+```shell
+docker run -it --rm -v nexus-data:/nexus-data alpine cat /nexus-data/admin.password && echo
+```
+
+#### Stop Nexus with timeout
+When stopping, be sure to allow sufficient time for the databases to fully shut down.
+
+```shell
+docker stop --time=120 nexus
+```
+
 
 ## Nginx
 
