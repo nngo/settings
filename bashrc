@@ -53,6 +53,8 @@ if [ -f ~/settings/aliases.bash ]; then
   source ~/settings/aliases.bash
 fi
 
-# Source ~/work/bashrc (if exists and readable)
-[ -r ~/work/settings/bashrc-work.bash ] && source ~/work/settings/bashrc-work.bash
+# Source ~/work/settings/bashrc-work.bash (if exists and readable)
+if [ -r ~/work/settings/bashrc-work.bash ]; then
+  . ~/work/settings/bashrc-work.bash
+fi
 
