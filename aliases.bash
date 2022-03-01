@@ -1,6 +1,6 @@
-# echo command before running it
+# echo command to stderr (to not conflict with stdout of executed command) before running it
 function runcmd() {
-  echo $@
+  echo $@ >&2
   eval $@
 }
 
