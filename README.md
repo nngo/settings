@@ -1,6 +1,8 @@
 # Settings and Configurations
 my Linux shell dotfiles (.bashrc, .cshrc, .aliases.bash, .aliases.csh, etc.)
 
+* NOTE: below assumes you have cloned this repo into your home directory under `~/settings`.
+
 ## Bash Settings Usage:
 * Append following to your `~/.bashrc` to source this file, e.g.
 
@@ -25,5 +27,20 @@ ln -s ~/settings/bashrc ~/.bashrc
 if [ -f ~/settings/aliases.bash ]; then
   source ~/settings/aliases.bash
 fi
+```
+
+## Git Settings Usage
+* Add following to your `~/.gitconfig`:
+
+```
+[include]
+  path = ~/settings/gitconfig
+```
+
+## VIM Settings Usage
+* Create symbolic link from `~/.vimrc` to file under `~/settings/vimrc`, e.g.
+
+```shell
+ln -s ~/settings/vimrc ~/.vimrc
 ```
 

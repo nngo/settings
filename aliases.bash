@@ -1,3 +1,9 @@
+# echo command before running it
+function runcmd() {
+  echo $@
+  eval $@
+}
+
 # single char aliases
 alias a='alias'
 alias d='ls -lF'
@@ -11,6 +17,7 @@ alias bc='bc -l'
 alias cls='clear'
 alias ealias='vi ~/settings/aliases.bash'
 alias salias='source ~/settings/aliases.bash'
+alias ebashrc='vi ~/settings/bashrc'
 alias less-ansi-color='less --RAW-CONTROL-CHARS'
 alias ll='ls -l'
 alias lss='ls -lSr'
@@ -162,13 +169,19 @@ alias dcdown='docker-compose down'
 alias dcls='docker container ls'
 alias dcrm='docker container rm'
 alias dimgs='docker images'
+alias dins='runcmd docker inspect'
+alias dkill='docker kill'
 alias drmi='docker image rm'
 alias dps='docker ps'
+alias dpull='docker pull'
 alias dStop='docker stop'
-alias drunit='winpty docker run -it --rm'
-alias drunitkeep='winpty docker run -it'
+alias drunit='docker run -it --rm'
+alias drunitkeep='docker run -it'
+alias wdrunit='winpty docker run -it --rm'
+alias wdrunitkeep='winpty docker run -it'
 alias dexecit='winpty docker exec -it'
 alias dstartia='winpty docker start -ia'
+alias dtag='docker tag'
 alias ddangleimgs='docker images -f "dangling=true"'
 alias diprune='docker image prune'
 alias dsysPrune='docker system prune'
@@ -189,3 +202,10 @@ alias http-post-data.json-file='curl -X POST -H "Content-Type: application/json"
 alias http-put-json-curl='curl -X PUT -H "Content-Type: application/json" -i -d'
 alias http-basic-auth-curl='curl --user user:password'
 alias sb-post-shutdown='curl -X POST http://localhost:8080/actuator/shutdown'
+
+# kubernetes (k8s)
+alias k='kubectl'
+# enable bash completion for 'k' alias to kubectl
+# see https://kubernetes.io/docs/reference/kubectl/cheatsheet/#bash
+#complete -F __start_kubectl k
+
