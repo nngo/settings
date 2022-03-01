@@ -130,6 +130,7 @@ alias gwwarnings='gw help --warning-mode=all'
 # Maven
 alias mbldNoTests='mvn -DskipTests package'
 alias mbld='mvn package'
+alias minstallNoTests='mvn -DskipTests install'
 alias mcbld='mvn clean package'
 
 # dates
