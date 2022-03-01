@@ -130,7 +130,7 @@ alias gwdm='gw dependencyManagement'
 alias gwdoc='gw javadoc'
 alias gwp2local='gw publishToMavenLocal'
 alias gwupgrade-to-5_6_4='gw wrapper --gradle-version 5.6.4 --gradle-distribution-sha256-sum 1f3067073041bc44554d0efe5d402a33bc3d3c93cc39ab684f308586d732a80d && gw wrapper -v'
-alias gwupgrade-to-6_4_1='gw wrapper --gradle-version 6.4.1 --gradle-distribution-sha256-sum e58cdff0cee6d9b422dcd08ebeb3177bc44eaa09bd9a2e838ff74c408fe1cbcd && gw wrapper -v && gw wrapper --gradle-version 6.4.1'
+alias gwupgrade-to-6_9_2='gw wrapper --gradle-version 6.9.2 --gradle-distribution-sha256-sum 8b356fd8702d5ffa2e066ed0be45a023a779bba4dd1a68fd11bc2a6bdc981e8f && gw wrapper -v'
 alias gwwarnings='gw help --warning-mode=all'
 
 # Maven
