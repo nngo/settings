@@ -59,3 +59,9 @@ if [ -r ~/work/settings/bashrc-work.bash ]; then
   . ~/work/settings/bashrc-work.bash
 fi
 
+# git prompt
+if [ -r /usr/share/git-core/contrib/completion/git-prompt.sh ]; then
+  . /usr/share/git-core/contrib/completion/git-prompt.sh
+  PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+fi
+
