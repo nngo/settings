@@ -72,5 +72,5 @@ if [ -r /usr/share/git-core/contrib/completion/git-prompt.sh ]; then
   # GIT_PS1_SHOWCOLORHINTS - MUST use Bash PROMPT_COMMAND= instead of PS1=
   PROMPT_COMMAND='__git_ps1 "\u@\h:\w" "\\\$ "'
 fi
-alias git-prompt-help='echo "unstaged (*), staged (+), stash ($), untracked (%), (<) behind upstream, (>) ahead, (<>) diverged, (=) no difference"'
+alias git-prompt-help='echo -e "unstaged (*), staged (+), stash ($), untracked (%) \nupstream: behind (<), ahead (>), diverged (<>), no difference (=)"'
 
