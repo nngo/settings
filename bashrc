@@ -66,9 +66,11 @@ if [ -r /usr/share/git-core/contrib/completion/git-prompt.sh ]; then
   GIT_PS1_SHOWDIRTYSTATE=1
   # GIT_PS1_SHOWSTASHSTATE - '$' next to branch name if have stash
   # GIT_PS1_SHOWUNTRACKEDFILES - '%' if have untracked files
+  #GIT_PS1_SHOWUNTRACKEDFILES=1
   # GIT_PS1_SHOWUPSTREAM - auto for '<' to indicate you are behind, '>' ahead, "<>" diverged, and '=' no difference
   #PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
   # GIT_PS1_SHOWCOLORHINTS - MUST use Bash PROMPT_COMMAND= instead of PS1=
   PROMPT_COMMAND='__git_ps1 "\u@\h:\w" "\\\$ "'
 fi
+alias git-prompt-help='echo "unstaged (*), staged (+), stash ($), untracked (%), (<) behind upstream, (>) ahead, (<>) diverged, (=) no difference"'
 
