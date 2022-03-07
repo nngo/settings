@@ -206,3 +206,13 @@ alias k='kubectl'
 # enable bash completion for 'k' alias to kubectl
 # see https://kubernetes.io/docs/reference/kubectl/cheatsheet/#bash
 #complete -F __start_kubectl k
+alias kgp='kubectl get pods'
+alias kpg='kubectl get pods | grep'
+alias klogin='kubectl login $USER'
+
+alias kns='kubens --current'
+
+# helm
+alias h3='helm3'
+alias hls='helm list'
+
