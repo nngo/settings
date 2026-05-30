@@ -218,3 +218,6 @@ alias kns='kubens --current'
 alias h3='helm3'
 alias hls='helm list'
 
+alias backup-photos-26='time rsync -av PXL_2026*.jpg /data/photos/2026/nn-pixel-26/'
+alias backup-videos-26='time rsync -av PXL_2026*.mp4 /data/photos/2026/videos-nn-pixel-26/'
+
